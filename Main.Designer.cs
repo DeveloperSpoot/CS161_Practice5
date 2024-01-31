@@ -28,240 +28,270 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.loadEventButton = new System.Windows.Forms.Button();
-            this.coinTossSimButton = new System.Windows.Forms.Button();
-            this.runningTotalButton = new System.Windows.Forms.Button();
-            this.loopToReadButton = new System.Windows.Forms.Button();
-            this.appendingDataButton = new System.Windows.Forms.Button();
-            this.writingDataButton = new System.Windows.Forms.Button();
-            this.forLoopButton = new System.Windows.Forms.Button();
-            this.endingBalanceButton = new System.Windows.Forms.Button();
-            this.accountBalanceLoopButton = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.distanceFileButton = new System.Windows.Forms.Button();
-            this.diceSimulatorButton = new System.Windows.Forms.Button();
-            this.tuitionIncreaseButton = new System.Windows.Forms.Button();
-            this.oceanLevelsButton = new System.Windows.Forms.Button();
-            this.pennies4PayButton = new System.Windows.Forms.Button();
-            this.populationButton = new System.Windows.Forms.Button();
-            this.CelsiusFarenheitButton = new System.Windows.Forms.Button();
-            this.distanceCalculatorButton = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new GroupBox();
+            loadEventButton = new Button();
+            coinTossSimButton = new Button();
+            runningTotalButton = new Button();
+            loopToReadButton = new Button();
+            appendingDataButton = new Button();
+            writingDataButton = new Button();
+            forLoopButton = new Button();
+            endingBalanceButton = new Button();
+            accountBalanceLoopButton = new Button();
+            groupBox2 = new GroupBox();
+            distanceFileButton = new Button();
+            diceSimulatorButton = new Button();
+            tuitionIncreaseButton = new Button();
+            oceanLevelsButton = new Button();
+            pennies4PayButton = new Button();
+            populationButton = new Button();
+            CelsiusFarenheitButton = new Button();
+            distanceCalculatorButton = new Button();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.loadEventButton);
-            this.groupBox1.Controls.Add(this.coinTossSimButton);
-            this.groupBox1.Controls.Add(this.runningTotalButton);
-            this.groupBox1.Controls.Add(this.loopToReadButton);
-            this.groupBox1.Controls.Add(this.appendingDataButton);
-            this.groupBox1.Controls.Add(this.writingDataButton);
-            this.groupBox1.Controls.Add(this.forLoopButton);
-            this.groupBox1.Controls.Add(this.endingBalanceButton);
-            this.groupBox1.Controls.Add(this.accountBalanceLoopButton);
-            this.groupBox1.Location = new System.Drawing.Point(10, 11);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(240, 437);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tutorials";
+            groupBox1.Controls.Add(loadEventButton);
+            groupBox1.Controls.Add(coinTossSimButton);
+            groupBox1.Controls.Add(runningTotalButton);
+            groupBox1.Controls.Add(loopToReadButton);
+            groupBox1.Controls.Add(appendingDataButton);
+            groupBox1.Controls.Add(writingDataButton);
+            groupBox1.Controls.Add(forLoopButton);
+            groupBox1.Controls.Add(endingBalanceButton);
+            groupBox1.Controls.Add(accountBalanceLoopButton);
+            groupBox1.Location = new Point(9, 9);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(210, 345);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Tutorials";
             // 
             // loadEventButton
             // 
-            this.loadEventButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loadEventButton.Location = new System.Drawing.Point(18, 393);
-            this.loadEventButton.Name = "loadEventButton";
-            this.loadEventButton.Size = new System.Drawing.Size(197, 31);
-            this.loadEventButton.TabIndex = 8;
-            this.loadEventButton.Text = "Load Event";
-            this.loadEventButton.UseVisualStyleBackColor = true;
+            loadEventButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            loadEventButton.Location = new Point(16, 310);
+            loadEventButton.Margin = new Padding(3, 2, 3, 2);
+            loadEventButton.Name = "loadEventButton";
+            loadEventButton.Size = new Size(172, 24);
+            loadEventButton.TabIndex = 8;
+            loadEventButton.Text = "Load Event";
+            loadEventButton.UseVisualStyleBackColor = true;
+            loadEventButton.Click += loadEventButton_Click;
             // 
             // coinTossSimButton
             // 
-            this.coinTossSimButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.coinTossSimButton.Location = new System.Drawing.Point(18, 347);
-            this.coinTossSimButton.Name = "coinTossSimButton";
-            this.coinTossSimButton.Size = new System.Drawing.Size(197, 31);
-            this.coinTossSimButton.TabIndex = 7;
-            this.coinTossSimButton.Text = "Coin Toss Sim";
-            this.coinTossSimButton.UseVisualStyleBackColor = true;
+            coinTossSimButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            coinTossSimButton.Location = new Point(16, 274);
+            coinTossSimButton.Margin = new Padding(3, 2, 3, 2);
+            coinTossSimButton.Name = "coinTossSimButton";
+            coinTossSimButton.Size = new Size(172, 24);
+            coinTossSimButton.TabIndex = 7;
+            coinTossSimButton.Text = "Coin Toss Sim";
+            coinTossSimButton.UseVisualStyleBackColor = true;
+            coinTossSimButton.Click += coinTossSimButton_Click;
             // 
             // runningTotalButton
             // 
-            this.runningTotalButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.runningTotalButton.Location = new System.Drawing.Point(18, 301);
-            this.runningTotalButton.Name = "runningTotalButton";
-            this.runningTotalButton.Size = new System.Drawing.Size(197, 31);
-            this.runningTotalButton.TabIndex = 6;
-            this.runningTotalButton.Text = "Running Total";
-            this.runningTotalButton.UseVisualStyleBackColor = true;
+            runningTotalButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            runningTotalButton.Location = new Point(16, 238);
+            runningTotalButton.Margin = new Padding(3, 2, 3, 2);
+            runningTotalButton.Name = "runningTotalButton";
+            runningTotalButton.Size = new Size(172, 24);
+            runningTotalButton.TabIndex = 6;
+            runningTotalButton.Text = "Running Total";
+            runningTotalButton.UseVisualStyleBackColor = true;
+            runningTotalButton.Click += runningTotalButton_Click;
             // 
             // loopToReadButton
             // 
-            this.loopToReadButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loopToReadButton.Location = new System.Drawing.Point(18, 255);
-            this.loopToReadButton.Name = "loopToReadButton";
-            this.loopToReadButton.Size = new System.Drawing.Size(197, 31);
-            this.loopToReadButton.TabIndex = 5;
-            this.loopToReadButton.Text = "Loop to Read";
-            this.loopToReadButton.UseVisualStyleBackColor = true;
+            loopToReadButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            loopToReadButton.Location = new Point(16, 201);
+            loopToReadButton.Margin = new Padding(3, 2, 3, 2);
+            loopToReadButton.Name = "loopToReadButton";
+            loopToReadButton.Size = new Size(172, 24);
+            loopToReadButton.TabIndex = 5;
+            loopToReadButton.Text = "Loop to Read";
+            loopToReadButton.UseVisualStyleBackColor = true;
+            loopToReadButton.Click += loopToReadButton_Click;
             // 
             // appendingDataButton
             // 
-            this.appendingDataButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.appendingDataButton.Location = new System.Drawing.Point(18, 209);
-            this.appendingDataButton.Name = "appendingDataButton";
-            this.appendingDataButton.Size = new System.Drawing.Size(197, 31);
-            this.appendingDataButton.TabIndex = 4;
-            this.appendingDataButton.Text = "Appending Data";
-            this.appendingDataButton.UseVisualStyleBackColor = true;
+            appendingDataButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            appendingDataButton.Location = new Point(16, 165);
+            appendingDataButton.Margin = new Padding(3, 2, 3, 2);
+            appendingDataButton.Name = "appendingDataButton";
+            appendingDataButton.Size = new Size(172, 24);
+            appendingDataButton.TabIndex = 4;
+            appendingDataButton.Text = "Appending Data";
+            appendingDataButton.UseVisualStyleBackColor = true;
+            appendingDataButton.Click += appendingDataButton_Click;
             // 
             // writingDataButton
             // 
-            this.writingDataButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.writingDataButton.Location = new System.Drawing.Point(18, 163);
-            this.writingDataButton.Name = "writingDataButton";
-            this.writingDataButton.Size = new System.Drawing.Size(197, 31);
-            this.writingDataButton.TabIndex = 3;
-            this.writingDataButton.Text = "Writing Data";
-            this.writingDataButton.UseVisualStyleBackColor = true;
+            writingDataButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            writingDataButton.Location = new Point(16, 129);
+            writingDataButton.Margin = new Padding(3, 2, 3, 2);
+            writingDataButton.Name = "writingDataButton";
+            writingDataButton.Size = new Size(172, 24);
+            writingDataButton.TabIndex = 3;
+            writingDataButton.Text = "Writing Data";
+            writingDataButton.UseVisualStyleBackColor = true;
+            writingDataButton.Click += writingDataButton_Click;
             // 
             // forLoopButton
             // 
-            this.forLoopButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.forLoopButton.Location = new System.Drawing.Point(18, 117);
-            this.forLoopButton.Name = "forLoopButton";
-            this.forLoopButton.Size = new System.Drawing.Size(197, 31);
-            this.forLoopButton.TabIndex = 2;
-            this.forLoopButton.Text = "For Loop";
-            this.forLoopButton.UseVisualStyleBackColor = true;
+            forLoopButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            forLoopButton.Location = new Point(16, 92);
+            forLoopButton.Margin = new Padding(3, 2, 3, 2);
+            forLoopButton.Name = "forLoopButton";
+            forLoopButton.Size = new Size(172, 24);
+            forLoopButton.TabIndex = 2;
+            forLoopButton.Text = "For Loop";
+            forLoopButton.UseVisualStyleBackColor = true;
+            forLoopButton.Click += forLoopButton_Click;
             // 
             // endingBalanceButton
             // 
-            this.endingBalanceButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.endingBalanceButton.Location = new System.Drawing.Point(18, 71);
-            this.endingBalanceButton.Name = "endingBalanceButton";
-            this.endingBalanceButton.Size = new System.Drawing.Size(197, 31);
-            this.endingBalanceButton.TabIndex = 1;
-            this.endingBalanceButton.Text = "Ending Balance";
-            this.endingBalanceButton.UseVisualStyleBackColor = true;
+            endingBalanceButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            endingBalanceButton.Location = new Point(16, 56);
+            endingBalanceButton.Margin = new Padding(3, 2, 3, 2);
+            endingBalanceButton.Name = "endingBalanceButton";
+            endingBalanceButton.Size = new Size(172, 24);
+            endingBalanceButton.TabIndex = 1;
+            endingBalanceButton.Text = "Ending Balance";
+            endingBalanceButton.UseVisualStyleBackColor = true;
+            endingBalanceButton.Click += endingBalanceButton_Click;
             // 
             // accountBalanceLoopButton
             // 
-            this.accountBalanceLoopButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.accountBalanceLoopButton.Location = new System.Drawing.Point(18, 25);
-            this.accountBalanceLoopButton.Name = "accountBalanceLoopButton";
-            this.accountBalanceLoopButton.Size = new System.Drawing.Size(197, 31);
-            this.accountBalanceLoopButton.TabIndex = 0;
-            this.accountBalanceLoopButton.Text = "Account Balance Loop";
-            this.accountBalanceLoopButton.UseVisualStyleBackColor = true;
+            accountBalanceLoopButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            accountBalanceLoopButton.Location = new Point(16, 20);
+            accountBalanceLoopButton.Margin = new Padding(3, 2, 3, 2);
+            accountBalanceLoopButton.Name = "accountBalanceLoopButton";
+            accountBalanceLoopButton.Size = new Size(172, 24);
+            accountBalanceLoopButton.TabIndex = 0;
+            accountBalanceLoopButton.Text = "Account Balance Loop";
+            accountBalanceLoopButton.UseVisualStyleBackColor = true;
+            accountBalanceLoopButton.Click += accountBalanceLoopButton_Click;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.distanceFileButton);
-            this.groupBox2.Controls.Add(this.diceSimulatorButton);
-            this.groupBox2.Controls.Add(this.tuitionIncreaseButton);
-            this.groupBox2.Controls.Add(this.oceanLevelsButton);
-            this.groupBox2.Controls.Add(this.pennies4PayButton);
-            this.groupBox2.Controls.Add(this.populationButton);
-            this.groupBox2.Controls.Add(this.CelsiusFarenheitButton);
-            this.groupBox2.Controls.Add(this.distanceCalculatorButton);
-            this.groupBox2.Location = new System.Drawing.Point(273, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(240, 437);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Programming Problems";
+            groupBox2.Controls.Add(distanceFileButton);
+            groupBox2.Controls.Add(diceSimulatorButton);
+            groupBox2.Controls.Add(tuitionIncreaseButton);
+            groupBox2.Controls.Add(oceanLevelsButton);
+            groupBox2.Controls.Add(pennies4PayButton);
+            groupBox2.Controls.Add(populationButton);
+            groupBox2.Controls.Add(CelsiusFarenheitButton);
+            groupBox2.Controls.Add(distanceCalculatorButton);
+            groupBox2.Location = new Point(239, 9);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(210, 345);
+            groupBox2.TabIndex = 9;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Programming Problems";
             // 
             // distanceFileButton
             // 
-            this.distanceFileButton.Location = new System.Drawing.Point(18, 70);
-            this.distanceFileButton.Name = "distanceFileButton";
-            this.distanceFileButton.Size = new System.Drawing.Size(197, 31);
-            this.distanceFileButton.TabIndex = 7;
-            this.distanceFileButton.Text = "Distance File";
-            this.distanceFileButton.UseVisualStyleBackColor = true;
+            distanceFileButton.Location = new Point(16, 55);
+            distanceFileButton.Margin = new Padding(3, 2, 3, 2);
+            distanceFileButton.Name = "distanceFileButton";
+            distanceFileButton.Size = new Size(172, 24);
+            distanceFileButton.TabIndex = 7;
+            distanceFileButton.Text = "Distance File";
+            distanceFileButton.UseVisualStyleBackColor = true;
             // 
             // diceSimulatorButton
             // 
-            this.diceSimulatorButton.Location = new System.Drawing.Point(18, 346);
-            this.diceSimulatorButton.Name = "diceSimulatorButton";
-            this.diceSimulatorButton.Size = new System.Drawing.Size(197, 31);
-            this.diceSimulatorButton.TabIndex = 6;
-            this.diceSimulatorButton.Text = "Dice Simulator";
-            this.diceSimulatorButton.UseVisualStyleBackColor = true;
+            diceSimulatorButton.Location = new Point(16, 273);
+            diceSimulatorButton.Margin = new Padding(3, 2, 3, 2);
+            diceSimulatorButton.Name = "diceSimulatorButton";
+            diceSimulatorButton.Size = new Size(172, 24);
+            diceSimulatorButton.TabIndex = 6;
+            diceSimulatorButton.Text = "Dice Simulator";
+            diceSimulatorButton.UseVisualStyleBackColor = true;
             // 
             // tuitionIncreaseButton
             // 
-            this.tuitionIncreaseButton.Location = new System.Drawing.Point(18, 300);
-            this.tuitionIncreaseButton.Name = "tuitionIncreaseButton";
-            this.tuitionIncreaseButton.Size = new System.Drawing.Size(197, 31);
-            this.tuitionIncreaseButton.TabIndex = 5;
-            this.tuitionIncreaseButton.Text = "Tuition Increase";
-            this.tuitionIncreaseButton.UseVisualStyleBackColor = true;
+            tuitionIncreaseButton.Location = new Point(16, 237);
+            tuitionIncreaseButton.Margin = new Padding(3, 2, 3, 2);
+            tuitionIncreaseButton.Name = "tuitionIncreaseButton";
+            tuitionIncreaseButton.Size = new Size(172, 24);
+            tuitionIncreaseButton.TabIndex = 5;
+            tuitionIncreaseButton.Text = "Tuition Increase";
+            tuitionIncreaseButton.UseVisualStyleBackColor = true;
             // 
             // oceanLevelsButton
             // 
-            this.oceanLevelsButton.Location = new System.Drawing.Point(18, 254);
-            this.oceanLevelsButton.Name = "oceanLevelsButton";
-            this.oceanLevelsButton.Size = new System.Drawing.Size(197, 31);
-            this.oceanLevelsButton.TabIndex = 4;
-            this.oceanLevelsButton.Text = "Ocean Levels";
-            this.oceanLevelsButton.UseVisualStyleBackColor = true;
+            oceanLevelsButton.Location = new Point(16, 201);
+            oceanLevelsButton.Margin = new Padding(3, 2, 3, 2);
+            oceanLevelsButton.Name = "oceanLevelsButton";
+            oceanLevelsButton.Size = new Size(172, 24);
+            oceanLevelsButton.TabIndex = 4;
+            oceanLevelsButton.Text = "Ocean Levels";
+            oceanLevelsButton.UseVisualStyleBackColor = true;
             // 
             // pennies4PayButton
             // 
-            this.pennies4PayButton.Location = new System.Drawing.Point(18, 208);
-            this.pennies4PayButton.Name = "pennies4PayButton";
-            this.pennies4PayButton.Size = new System.Drawing.Size(197, 31);
-            this.pennies4PayButton.TabIndex = 3;
-            this.pennies4PayButton.Text = "Pennies for Pay";
-            this.pennies4PayButton.UseVisualStyleBackColor = true;
+            pennies4PayButton.Location = new Point(16, 164);
+            pennies4PayButton.Margin = new Padding(3, 2, 3, 2);
+            pennies4PayButton.Name = "pennies4PayButton";
+            pennies4PayButton.Size = new Size(172, 24);
+            pennies4PayButton.TabIndex = 3;
+            pennies4PayButton.Text = "Pennies for Pay";
+            pennies4PayButton.UseVisualStyleBackColor = true;
             // 
             // populationButton
             // 
-            this.populationButton.Location = new System.Drawing.Point(18, 162);
-            this.populationButton.Name = "populationButton";
-            this.populationButton.Size = new System.Drawing.Size(197, 31);
-            this.populationButton.TabIndex = 2;
-            this.populationButton.Text = "Population";
-            this.populationButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.populationButton.UseVisualStyleBackColor = true;
+            populationButton.Location = new Point(16, 128);
+            populationButton.Margin = new Padding(3, 2, 3, 2);
+            populationButton.Name = "populationButton";
+            populationButton.Size = new Size(172, 24);
+            populationButton.TabIndex = 2;
+            populationButton.Text = "Population";
+            populationButton.TextAlign = ContentAlignment.TopCenter;
+            populationButton.UseVisualStyleBackColor = true;
             // 
             // CelsiusFarenheitButton
             // 
-            this.CelsiusFarenheitButton.Location = new System.Drawing.Point(18, 116);
-            this.CelsiusFarenheitButton.Name = "CelsiusFarenheitButton";
-            this.CelsiusFarenheitButton.Size = new System.Drawing.Size(197, 31);
-            this.CelsiusFarenheitButton.TabIndex = 1;
-            this.CelsiusFarenheitButton.Text = "Celsius to Fahrenheit";
-            this.CelsiusFarenheitButton.UseVisualStyleBackColor = true;
+            CelsiusFarenheitButton.Location = new Point(16, 92);
+            CelsiusFarenheitButton.Margin = new Padding(3, 2, 3, 2);
+            CelsiusFarenheitButton.Name = "CelsiusFarenheitButton";
+            CelsiusFarenheitButton.Size = new Size(172, 24);
+            CelsiusFarenheitButton.TabIndex = 1;
+            CelsiusFarenheitButton.Text = "Celsius to Fahrenheit";
+            CelsiusFarenheitButton.UseVisualStyleBackColor = true;
             // 
             // distanceCalculatorButton
             // 
-            this.distanceCalculatorButton.Location = new System.Drawing.Point(18, 25);
-            this.distanceCalculatorButton.Name = "distanceCalculatorButton";
-            this.distanceCalculatorButton.Size = new System.Drawing.Size(197, 31);
-            this.distanceCalculatorButton.TabIndex = 0;
-            this.distanceCalculatorButton.Text = "Distance Calculator";
-            this.distanceCalculatorButton.UseVisualStyleBackColor = true;
+            distanceCalculatorButton.Location = new Point(16, 20);
+            distanceCalculatorButton.Margin = new Padding(3, 2, 3, 2);
+            distanceCalculatorButton.Name = "distanceCalculatorButton";
+            distanceCalculatorButton.Size = new Size(172, 24);
+            distanceCalculatorButton.TabIndex = 0;
+            distanceCalculatorButton.Text = "Distance Calculator";
+            distanceCalculatorButton.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 460);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Main";
-            this.Text = "Main";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(461, 363);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Main";
+            Text = "Main";
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
