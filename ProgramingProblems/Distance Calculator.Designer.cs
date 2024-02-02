@@ -34,6 +34,7 @@
             this.hoursTextBox = new System.Windows.Forms.TextBox();
             this.exitButton = new System.Windows.Forms.Button();
             this.hoursMphListbox = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +61,6 @@
             this.mphTextBox.Name = "mphTextBox";
             this.mphTextBox.Size = new System.Drawing.Size(100, 26);
             this.mphTextBox.TabIndex = 2;
-            this.mphTextBox.TextChanged += new System.EventHandler(this.onInput);
             // 
             // hoursTextBox
             // 
@@ -68,14 +68,13 @@
             this.hoursTextBox.Name = "hoursTextBox";
             this.hoursTextBox.Size = new System.Drawing.Size(100, 26);
             this.hoursTextBox.TabIndex = 3;
-            this.hoursTextBox.TextChanged += new System.EventHandler(this.onInput);
             // 
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.RosyBrown;
-            this.exitButton.Location = new System.Drawing.Point(12, 279);
+            this.exitButton.Location = new System.Drawing.Point(145, 279);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(251, 29);
+            this.exitButton.Size = new System.Drawing.Size(118, 29);
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "EXIT";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -90,11 +89,23 @@
             this.hoursMphListbox.Size = new System.Drawing.Size(251, 175);
             this.hoursMphListbox.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.OliveDrab;
+            this.button1.Location = new System.Drawing.Point(12, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 29);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Calculate";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.onInput);
+            // 
             // Distance_Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 319);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.hoursMphListbox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.hoursTextBox);
@@ -116,5 +127,6 @@
         private TextBox hoursTextBox;
         private Button exitButton;
         private ListBox hoursMphListbox;
+        private Button button1;
     }
 }

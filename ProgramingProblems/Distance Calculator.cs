@@ -23,14 +23,28 @@ namespace CS161_Practice5.ProgramingProblems
 
             int mph, hours;
 
-            if(int.TryParse(mphTextBox.Text, out mph) && int.TryParse(hoursTextBox.Text, out hours)){
-                for (int i = 1; i <= hours; i++) {
-                    hoursMphListbox.Items.Add($"After hour {i} distance traveled is {i*mph}.");
-                }
-            }else
+            try
             {
-                MessageBox.Show("Invalid text intered into the inputs, please only input intergers.");
+                StreamWriter outputFile = new StreamWriter("DistanceTraveled.txt");
+
+                if(int.TryParse(mphTextBox.Text, out mph) && int.TryParse(hoursTextBox.Text, out hours)){
+                    for (int i = 1; i <= hours; i++) {
+                    hoursMphListbox.Items.Add($"After hour {i} distance traveled is {i*mph}.");
+                        outputFile.WriteLine($"After hour {i} distance traveled is {i * mph}.");
+                    }
+
+                    outputFile.Close();
+
+                    MessageBox.Show("Distance Traveled has been written to the file.");
+            }   else
+                {
+                    MessageBox.Show("Invalid text intered into the inputs, please only input intergers.");
+                }
+            }catch(Exception ex){
+                    MessageBox.Show(ex.Message);
             }
+
+
         }
 
         private void exitButton_Click(object sender, EventArgs e)

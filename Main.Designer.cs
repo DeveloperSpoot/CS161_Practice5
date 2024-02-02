@@ -184,6 +184,7 @@
             this.distanceFileButton.TabIndex = 7;
             this.distanceFileButton.Text = "Distance File";
             this.distanceFileButton.UseVisualStyleBackColor = true;
+            this.distanceFileButton.Click += new System.EventHandler(this.distanceCalculatorButton_Click);
             // 
             // diceSimulatorButton
             // 
