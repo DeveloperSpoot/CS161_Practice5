@@ -1,3 +1,4 @@
+using CS161_Practice5.ProgramingProblems;
 using CS161_Practice5.Tutorials;
 
 namespace CS161_Practice5
@@ -60,6 +61,12 @@ namespace CS161_Practice5
         private void loadEventButton_Click(object sender, EventArgs e)
         {
             Load_Event form = new Load_Event();
+            form.Show();
+        }
+
+        private void distanceCalculatorButton_Click(object sender, EventArgs e)
+        {
+            Distance_Calculator form = new Distance_Calculator();
             form.Show();
         }
     }
