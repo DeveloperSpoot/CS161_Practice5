@@ -231,6 +231,7 @@
             this.populationButton.Text = "Population";
             this.populationButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.populationButton.UseVisualStyleBackColor = true;
+            this.populationButton.Click += new System.EventHandler(this.populationButton_Click);
             // 
             // CelsiusFarenheitButton
             // 

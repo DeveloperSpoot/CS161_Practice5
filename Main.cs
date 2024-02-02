@@ -75,5 +75,11 @@ namespace CS161_Practice5
             Celsius_to_Fahrenheit form = new Celsius_to_Fahrenheit();
             form.Show();
         }
+
+        private void populationButton_Click(object sender, EventArgs e)
+        {
+            Population form = new Population();
+            form.Show();
+        }
     }
 }
