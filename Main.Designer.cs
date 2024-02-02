@@ -240,6 +240,7 @@
             this.CelsiusFarenheitButton.TabIndex = 1;
             this.CelsiusFarenheitButton.Text = "Celsius to Fahrenheit";
             this.CelsiusFarenheitButton.UseVisualStyleBackColor = true;
+            this.CelsiusFarenheitButton.Click += new System.EventHandler(this.CelsiusFarenheitButton_Click);
             // 
             // distanceCalculatorButton
             // 

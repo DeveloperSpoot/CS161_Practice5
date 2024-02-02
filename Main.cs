@@ -69,5 +69,11 @@ namespace CS161_Practice5
             Distance_Calculator form = new Distance_Calculator();
             form.Show();
         }
+
+        private void CelsiusFarenheitButton_Click(object sender, EventArgs e)
+        {
+            Celsius_to_Fahrenheit form = new Celsius_to_Fahrenheit();
+            form.Show();
+        }
     }
 }
