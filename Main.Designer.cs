@@ -194,6 +194,7 @@
             this.diceSimulatorButton.TabIndex = 6;
             this.diceSimulatorButton.Text = "Dice Simulator";
             this.diceSimulatorButton.UseVisualStyleBackColor = true;
+            this.diceSimulatorButton.Click += new System.EventHandler(this.diceSimulatorButton_Click);
             // 
             // tuitionIncreaseButton
             // 
@@ -203,6 +204,7 @@
             this.tuitionIncreaseButton.TabIndex = 5;
             this.tuitionIncreaseButton.Text = "Tuition Increase";
             this.tuitionIncreaseButton.UseVisualStyleBackColor = true;
+            this.tuitionIncreaseButton.Click += new System.EventHandler(this.tuitionIncreaseButton_Click);
             // 
             // oceanLevelsButton
             // 
@@ -212,6 +214,7 @@
             this.oceanLevelsButton.TabIndex = 4;
             this.oceanLevelsButton.Text = "Ocean Levels";
             this.oceanLevelsButton.UseVisualStyleBackColor = true;
+            this.oceanLevelsButton.Click += new System.EventHandler(this.oceanLevelsButton_Click);
             // 
             // pennies4PayButton
             // 
@@ -221,6 +224,7 @@
             this.pennies4PayButton.TabIndex = 3;
             this.pennies4PayButton.Text = "Pennies for Pay";
             this.pennies4PayButton.UseVisualStyleBackColor = true;
+            this.pennies4PayButton.Click += new System.EventHandler(this.pennies4PayButton_Click);
             // 
             // populationButton
             // 

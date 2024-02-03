@@ -81,5 +81,26 @@ namespace CS161_Practice5
             Population form = new Population();
             form.Show();
         }
+
+        private void pennies4PayButton_Click(object sender, EventArgs e)
+        {
+            Pennies_for_Pay form = new Pennies_for_Pay();
+            form.Show();
+        }
+
+        private void oceanLevelsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tuitionIncreaseButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void diceSimulatorButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
