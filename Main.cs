@@ -96,7 +96,8 @@ namespace CS161_Practice5
 
         private void tuitionIncreaseButton_Click(object sender, EventArgs e)
         {
-
+            Tuition_Increase form = new Tuition_Increase();
+            form.Show();
         }
 
         private void diceSimulatorButton_Click(object sender, EventArgs e)
