@@ -90,7 +90,8 @@ namespace CS161_Practice5
 
         private void oceanLevelsButton_Click(object sender, EventArgs e)
         {
-
+            Ocean_Levels form = new Ocean_Levels();
+            form.Show();
         }
 
         private void tuitionIncreaseButton_Click(object sender, EventArgs e)
