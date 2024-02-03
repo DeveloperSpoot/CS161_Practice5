@@ -102,7 +102,8 @@ namespace CS161_Practice5
 
         private void diceSimulatorButton_Click(object sender, EventArgs e)
         {
-
+            Dice_Simulator form = new Dice_Simulator();
+            form.Show();
         }
     }
 }
